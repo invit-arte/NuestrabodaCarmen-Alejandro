@@ -1,0 +1,921 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
+  <meta
+    name="description"
+    content="Invitación digital"
+  >
+
+  <title>Nuestra Boda</title>
+  <link
+  href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+  rel="stylesheet"
+>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<!-- PORTADA DE APERTURA -->
+<section class="opening-screen" id="openingScreen">
+
+  <!-- Fondo completo con el sello ya integrado -->
+  <div class="opening-background"></div>
+
+  <!-- Botón invisible colocado encima del sello -->
+  <button
+    class="invisible-seal-button"
+    id="openInvitation"
+    type="button"
+    aria-label="Abrir invitación"
+  ></button>
+
+  <!-- Video animado del sello -->
+  <video
+    class="seal-video"
+    id="sealVideo"
+    muted
+    playsinline
+    preload="auto"
+  >
+    <source src="images/SOBREINTROac.mp4" type="video/mp4">
+  </video>
+
+</section>
+
+  <main class="invitation" id="invitation">
+
+    <!-- PORTADA PRINCIPAL -->
+<section
+  class="section section-cover"
+  id="portada"
+  aria-label="Portada de la invitación"
+></section>
+
+
+    <!-- FRASE -->
+<section class="section section-phrase" id="frase">
+
+  <article class="phrase-arch reveal-card">
+
+    <img
+      class="phrase-monogram"
+      src="images/LOGO1.png"
+      alt="Monograma de los novios"
+    >
+
+    <p class="phrase-text">
+      “Amar no es mirarse el uno al otro, sino mirar juntos
+      en la misma dirección.
+      <br><br>
+      Es construir un hogar donde siempre haya espacio para
+      el perdón, la risa y el crecimiento personal y mutuo.”
+    </p>
+
+  </article>
+
+</section>
+
+
+    <!-- CONTADOR -->
+    <section class="section section-countdown" id="contador">
+
+  <div class="countdown-overlay"></div>
+
+  <div class="countdown-content reveal reveal-up">
+
+    <p class="section-kicker">
+      Faltan:
+    </p>
+
+    <div class="countdown" id="countdown">
+
+      <div class="countdown-item">
+        <span id="days">00</span>
+        <small>D</small>
+      </div>
+
+      <div class="countdown-separator">:</div>
+
+      <div class="countdown-item">
+        <span id="hours">00</span>
+        <small>H</small>
+      </div>
+
+      <div class="countdown-separator">:</div>
+
+      <div class="countdown-item">
+        <span id="minutes">00</span>
+        <small>M</small>
+      </div>
+
+      <div class="countdown-separator">:</div>
+
+      <div class="countdown-item">
+        <span id="seconds">00</span>
+        <small>S</small>
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+<!-- PADRES Y PADRINOS -->
+<section class="section section-family" id="familia">
+
+  <article class="event-card license-card reveal-card">
+
+    <div class="family-group">
+      <h2 class="family-title">
+        Nuestros Padres
+      </h2>
+
+      <p class="family-role">
+        Novia
+      </p>
+
+      <p class="family-name">
+        Mario Rodríguez Sanabia
+      </p>
+
+      <p class="family-name">
+        Elva Urbano Magaña
+      </p>
+    </div>
+
+
+    <div class="family-group">
+      <p class="family-role">
+        Novio
+      </p>
+
+      <p class="family-name">
+        Roberto Ayala López
+      </p>
+
+      <p class="family-name">
+        María Teresa Álvarez
+      </p>
+    </div>
+
+
+    <div class="family-divider" aria-hidden="true">
+      ❦
+    </div>
+
+
+    <div class="family-group">
+      <h2 class="family-title">
+        Nuestros Padrinos
+      </h2>
+      <p class="family-name">
+        José de Jesús Flores Nuñez
+      </p>
+
+      <p class="family-name">
+        Genesis Polet Carmona Urbano
+      </p>
+    </div>
+
+  </article>
+
+</section>
+
+<!-- FOTO -->
+<!-- GALERÍA DE FOTOS -->
+<section class="section section-gallery" id="galeria">
+
+  <div
+    id="weddingGallery"
+    class="carousel slide carousel-fade gallery-carousel"
+    data-bs-ride="false"
+    data-bs-touch="true"
+    data-bs-interval="false"
+  >
+
+    <!-- INDICADORES -->
+    <div class="carousel-indicators gallery-indicators">
+
+      <button
+        type="button"
+        data-bs-target="#weddingGallery"
+        data-bs-slide-to="0"
+        class="active"
+        aria-current="true"
+        aria-label="Foto 1"
+      ></button>
+
+      <button
+        type="button"
+        data-bs-target="#weddingGallery"
+        data-bs-slide-to="1"
+        aria-label="Foto 2"
+      ></button>
+
+      <button
+        type="button"
+        data-bs-target="#weddingGallery"
+        data-bs-slide-to="2"
+        aria-label="Foto 3"
+      ></button>
+
+      <button
+        type="button"
+        data-bs-target="#weddingGallery"
+        data-bs-slide-to="3"
+        aria-label="Foto 4"
+      ></button>
+
+      <button
+        type="button"
+        data-bs-target="#weddingGallery"
+        data-bs-slide-to="4"
+        aria-label="Foto 5"
+      ></button>
+      
+
+    </div>
+
+
+    <!-- FOTOGRAFÍAS -->
+    <div class="carousel-inner gallery-inner">
+
+      <div class="carousel-item active">
+        <img
+          src="images/BODA1.jpeg"
+          class="gallery-image"
+          alt="Fotografía de los novios 1"
+        >
+      </div>
+
+      <div class="carousel-item">
+        <img
+          src="images/BODA2.jpeg"
+          class="gallery-image"
+          alt="Fotografía de los novios 2"
+        >
+      </div>
+
+      <div class="carousel-item">
+        <img
+          src="images/BODA3.png"
+          class="gallery-image"
+          alt="Fotografía de los novios 3"
+        >
+      </div>
+
+      <div class="carousel-item">  <!--incio para agregar una nueva imagen-->
+        <img
+          src="images/BODA4.png"
+          class="gallery-image"
+          alt="Fotografía de los novios 4"
+        >
+      </div> <!--final de agregar nueva imagen--> 
+
+      <div class="carousel-item">  <!--incio para agregar una nueva imagen-->
+        <img
+          src="images/BODA5.png"
+          class="gallery-image"
+          alt="Fotografía de los novios 5"
+        >
+      </div> <!--final de agregar nueva imagen--> 
+
+    </div>
+
+
+    <!-- FLECHA IZQUIERDA -->
+    <button
+      class="carousel-control-prev gallery-control"
+      type="button"
+      data-bs-target="#weddingGallery"
+      data-bs-slide="prev"
+      aria-label="Fotografía anterior"
+    >
+      <span class="gallery-arrow" aria-hidden="true">
+        ‹
+      </span>
+    </button>
+
+
+    <!-- FLECHA DERECHA -->
+    <button
+      class="carousel-control-next gallery-control"
+      type="button"
+      data-bs-target="#weddingGallery"
+      data-bs-slide="next"
+      aria-label="Fotografía siguiente"
+    >
+      <span class="gallery-arrow" aria-hidden="true">
+        ›
+      </span>
+    </button>
+
+  </div>
+
+</section>
+
+<!-- CEREMONIA Y RECEPCIÓN -->
+<section class="section section-events" id="eventos">
+
+  <!-- CEREMONIA -->
+  <article class="event-card license-card reveal-card">
+
+    <img
+      class="event-icon"
+      src="images/IGLESIA.png"
+      alt="Ceremonia"
+    >
+
+    <h2 class="event-title">
+    Ceremonia Religiosa
+    </h2>
+
+    <p class="event-place">
+      1:00 pm
+    </p>
+
+    <p class="event-time">
+      Templo<br>
+      San Jose de Contla
+    </p>
+
+    <!--<p class="event-address">
+      Av. Hidalgo 15, Zapopan,<br>
+      45100 Zapopan, Jal.
+    </p>-->
+
+    <a
+      class="event-map-button"
+      href="https://maps.app.goo.gl/c4BEjJEjpdo4CmmU7"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      Ver mapa
+    </a>
+
+  </article>
+
+  <!-- RECEPCION -->
+  <article class="event-card license-card reveal-card">
+
+    <img
+      class="event-icon"
+      src="images/SALON.png"
+      alt="Ceremonia"
+    >
+
+    <h2 class="event-title">
+    Salón Terraza
+    </h2>
+
+    <p class="event-place">
+      1:00 pm
+    </p>
+
+    <p class="event-time">
+      Rancho Navarro<br>
+      En paso de Ganado
+    </p>
+
+    <!--<p class="event-address">
+      Av. Hidalgo 15, Zapopan,<br>
+      45100 Zapopan, Jal.
+    </p>-->
+
+    <a
+      class="event-map-button"
+      href="https://maps.app.goo.gl/mZ7xDuGu8qyy3gcVA"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      Ver mapa
+    </a>
+
+  </article>
+
+</section>
+<!-- ITINERARIO -->
+<section class="section section-timeline" id="itinerario">
+
+  <h2 class="timeline-title reveal reveal-up">
+    Itinerario
+  </h2>
+
+  <div class="timeline-container">
+
+    <!-- CEREMONIA -->
+    <div class="timeline-item reveal-card">
+      <img
+        class="timeline-icon"
+        src="images/ceremonia.png"
+        alt="Ceremonia"
+      >
+
+      <p class="timeline-hour">
+        1:00 pm
+      </p>
+
+      <p class="timeline-name">
+        Ceremonia Religiosa
+      </p>
+    </div>
+
+    <div class="timeline-line reveal-line"></div>
+
+
+    <!-- RECEPCIÓN -->
+    <div class="timeline-item reveal-card">
+      <img
+        class="timeline-icon" 
+        src="images/COPAS.png"
+        alt="Recepción"
+      >
+
+      <p class="timeline-hour">
+        3:00 pm
+      </p>
+
+      <p class="timeline-name">
+        Cóctel de Bienvenida
+      </p>
+    </div>
+
+    <div class="timeline-line reveal-line"></div>
+
+
+    <!-- CENA -->
+    <div class="timeline-item reveal-card">
+      <img
+        class="timeline-icon"
+        src="images/PLATILLO.png"
+        alt="Cena"
+      >
+
+      <p class="timeline-hour">
+        4:30 pm
+      </p>
+
+      <p class="timeline-name">
+        Comida
+      </p>
+    </div>
+
+    <div class="timeline-line reveal-line"></div>
+
+
+    <!-- FIESTA -->
+    <div class="timeline-item reveal-card">
+      <img
+        class="timeline-icon"
+        src="images/vals.png"
+        alt="Fiesta"
+      >
+
+      <p class="timeline-hour">
+        6:30 pm
+      </p>
+
+      <p class="timeline-name">
+        Vals
+      </p>
+    </div>
+      <!-- DIVERSION -->
+    <div class="timeline-item reveal-card">
+      <img
+        class="timeline-icon"
+        src="images/FIESTA.png"
+        alt="Fiesta"
+      >
+
+      <p class="timeline-hour">
+        8:00 pm
+      </p>
+
+      <p class="timeline-name">
+        Diviértete y baila todo lo que puedas 
+      </p>
+    </div>
+    <!-- FIN -->
+    <div class="timeline-item reveal-card">
+      <img
+        class="timeline-icon"
+        src="images/fin.png"
+        alt="Fiesta"
+      >
+
+      <p class="timeline-hour">
+        10:00 pm
+      </p>
+
+      <p class="timeline-name">
+        Fin 
+      </p>
+    </div>
+
+
+
+
+
+  </div>
+
+</section>
+
+<!-- REGALOS Y CÓDIGO DE VESTIMENTA -->
+<section class="section section-details" id="detalles">
+
+  <!-- SUGERENCIAS DE REGALOS -->
+  <article class="gift-card reveal-card">
+
+    <img
+      class="detail-icon gift-icon"
+      src="images/REGALO.png"
+      alt="Sugerencias de regalos"
+    >
+
+    <h2 class="detail-title">
+      Sugerencias de
+    </h2>
+
+    <p class="detail-script">
+      regalos
+    </p>
+
+    <p class="detail-description">
+      “Para nosotros, lo más valioso es compartir este momento contigo,
+      Si en tus deseos está tener un detalle con nosotros,
+      podrás dejar tu sobre en el espacio destinado para ello en la entrada.
+      O bien cualquier obsequio con el que deseen consentirnos será recibido con mucho cariño.”
+    </p>
+    <!--
+    <button
+  type="button"
+  class="detail-button"
+  data-bs-toggle="modal"
+  data-bs-target="#bankModal"
+>
+  Ver Sobre
+</button>-->
+
+    <!--<p class="event-number">
+      Número de cuenta: 2021893892
+      <br>
+      Número de ruta: 121000248
+      <br>
+      BBVA:
+      4152 3138 3107 9012
+    </p>
+
+    <img
+      class="envelope-icon"
+      src="images/SOBRE.png"
+      alt=""
+      aria-hidden="true"
+    >
+
+    <p class="envelope-message">
+      ¡También tendremos lluvia de sobres!
+    </p>-->
+
+  </article>
+
+
+  <!-- DRESS CODE -->
+  <article class="dress-card reveal-card">
+
+    <img
+      class="dress-illustration"
+      src="images/ICONOPAREJA.png"
+      alt="Vestimenta formal"
+    >
+
+    <h2 class="detail-title dress-title">
+      Dress Code
+    </h2>
+
+    <p class="detail-script dress-script">
+      Cocktail Attire
+    </p>
+
+    <p class="detail-description dress-description">
+      Nos reservamos exclusivamente el color blanco y crudo/beige para los novios.
+      <br>
+      Elige libremente los colores de tu atuendo. ¡Queremos verte disfrutar y lucir increíble! ✨
+    </p>
+        <!--<div class="dress-colors">
+
+    <div class="dress-color">
+
+        <span
+            class="color-circle"
+            style="background:#6d4931;">
+        </span>
+
+        <small>Café</small>
+
+    </div>
+
+
+    <div class="dress-color">
+
+        <span
+            class="color-circle"
+            style="background:#c95c3f;">
+        </span>
+
+        <small>Colores Vivos</small>
+
+    </div>
+
+
+    <div class="dress-color">
+
+        <span
+            class="color-circle"
+            style="background:#68212f;">
+        </span>
+
+        <small>Borgoña</small>
+
+    </div>
+
+
+    <div class="dress-color">
+
+        <span
+            class="color-circle"
+            style="background:#404c34;">
+        </span>
+
+        <small>Verde Musgo</small>
+
+    </div>
+
+</div>-->
+
+<!--
+class="palette-button"
+href="https://pin.it/1XcIYi0pI"
+target="_blank">
+
+Inspírate
+
+</a>
+
+  </article>
+
+</section>-->
+
+  <!-- NUESTRA FAMILIA EN MÉXICO -->
+<!--<section class="section section-zoom" id="zoom">
+
+    <div class="zoom-content reveal-card">
+
+        <h2 class="zoom-title">
+            A nuestra familia
+            <span>en México</span>
+        </h2>
+
+        <p class="zoom-text">
+            La distancia podrá impedirnos compartir un mismo lugar,
+            pero nunca un mismo momento.
+            <br>
+            A nuestra querida familia en México, gracias por
+            acompañarnos desde donde estén.
+            Su amor forma parte de este día y de la familia que hoy
+            comenzamos a construir.
+        </p>
+
+        <a
+            href="https://us05web.zoom.us/j/3952201817?pwd=Ah4rqqu8DRrQIOH56cu6dpG2MvgG0T.1&omn=84673452148"
+            target="_blank"
+            class="zoom-button">
+
+            Unirme a Zoom
+
+        </a>
+        <p class="zoom-note">
+    Lizeth Aguirre is inviting you to a scheduled Zoom meeting.
+</p>
+
+    </div>-->
+
+</section>
+
+<!-- COMPARTE TUS FOTOS -->
+<section class="section section-photo-upload" id="comparte-fotos">
+
+  <article class="photo-upload-card reveal-card">
+
+    <h2 class="photo-upload-title">
+    Comparte los
+    <span>mejores momentos</span>
+</h2>
+
+    <p class="photo-upload-text">
+      Ayúdanos a guardar todos los momentos de este día.
+      Escanea el código QR o presiona el botón para subir
+      las fotografías que captures durante la fiesta.
+    </p>
+
+    <img
+      class="photo-upload-qr"
+      src="images/qrcodeAC.png"
+      alt="Código QR para subir fotografías del evento"
+    >
+
+    <a
+      class="photo-upload-button"
+      href="https://drive.google.com/drive/folders/1sxJRsAtdlTj0CGMl1s3fUV6hSoIQ_x5I?usp=sharing"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      Subir fotografías
+    </a>
+
+  </article>
+
+</section>
+
+<!-- CONFIRMACIÓN DE ASISTENCIA -->
+<section class="section section-rsvp" id="confirmacion">
+
+  <article class="rsvp-card reveal-card">
+
+    <h2 class="rsvp-title">
+      Confirma tu
+      <span>asistencia</span>
+    </h2>
+
+    <form class="rsvp-form" id="rsvpForm">
+
+      <select id="attendance" required>
+        <option value="" selected disabled>
+          Confirmación
+        </option>
+
+        <option value="Sí asistiré">
+          Sí asistiré
+        </option>
+
+        <option value="No podré asistir">
+          No podré asistir
+        </option>
+      </select>
+
+      <input
+        type="text"
+        id="guestName"
+        placeholder="Nombre de los asistentes"
+        required
+      >
+
+      <textarea
+        id="guestMessage"
+        placeholder="Mensaje para los novios"
+        rows="5"
+      ></textarea>
+
+      <label class="privacy-check">
+        <input
+          type="checkbox"
+          id="confirmData"
+          required
+        >
+
+        <span>
+          Mis respuestas son correctas
+        </span>
+      </label>
+
+      <button
+        class="rsvp-submit"
+        type="submit"
+      >
+        Enviar
+      </button>
+
+    </form>
+
+  </article>
+
+
+  <!-- MENSAJE FINAL -->
+  <div class="thanks-content reveal reveal-up">
+
+    <div class="thanks-divider" aria-hidden="true">
+      ❦
+    </div>
+
+    <h2 class="thanks-title">
+      Gracias por
+      <span>acompañarnos todo este tiempo</span>
+    </h2>
+
+    <p class="thanks-text">
+      Será un honor tenerlos en uno de los días más importantes en nuestra vida.
+    </p>
+    <p class="thanks-text">
+      ¡Los amamos!
+    </p>
+
+  </div>
+
+</section>
+
+<!-- IMAGEN FINAL -->
+<section class="section section-final">
+    <div class="final-image"></div>
+</section>
+
+
+
+  </main>
+
+  <!-- MODAL DATOS BANCARIOS -->
+   <!--
+<div
+  class="modal fade bank-modal"
+  id="bankModal"
+  tabindex="-1"
+  aria-labelledby="bankModalLabel"
+  aria-hidden="true"
+>
+  <div class="modal-dialog modal-dialog-centered">
+
+    <div class="modal-content bank-modal-content">
+
+      <button
+        type="button"
+        class="bank-modal-close"
+        data-bs-dismiss="modal"
+        aria-label="Cerrar"
+      >
+        ×
+      </button>-->
+
+      <!--<div class="modal-body bank-modal-body">
+
+        <h2
+          class="bank-modal-title"
+          id="bankModalLabel"
+        >
+          Datos de cuenta
+        </h2>
+
+        <p class="bank-modal-subtitle">
+          Wells Fargo
+        </p>
+          <span>A nombre de Lizeth Areli Aguirre Rodríguez</span>
+        <br>
+
+        <div class="bank-data">
+
+          <div class="bank-data-row">
+            <span>Número de cuenta</span>
+            <strong>2021893892</strong>
+          </div>
+
+          <div class="bank-data-row">
+            <span>Número de ruta</span>
+            <strong>121000248</strong>
+          </div>
+
+          <div class="bank-data-row">
+            <span>BBVA:</span>
+            <strong>4152 3138 3107 9012</strong>
+          </div>
+
+        </div>
+
+        <p class="bank-modal-note">
+          Gracias por acompañarnos en este momento tan especial.
+        </p>
+
+      </div>-->
+
+    </div>
+
+  </div>
+</div>
+
+  <!-- CANCIÓN -->
+  <audio id="backgroundMusic" loop>
+    <source src="images/ColdplayYellow.mp3" type="audio/mpeg">
+  </audio>
+
+  <script
+  src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+></script>
+
+<script src="script.js"></script>
+
+</body>
+</html>
