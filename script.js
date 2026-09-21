@@ -208,7 +208,7 @@ function initWhatsAppRSVP() {
       Ejemplo México:
       5214771234567
     */
-    const whatsappNumber = "1523411026948";
+    const whatsappNumber = "523411026948";
 
     let message =
       "Hola, quiero confirmar mi asistencia a la boda.%0A%0A" +
